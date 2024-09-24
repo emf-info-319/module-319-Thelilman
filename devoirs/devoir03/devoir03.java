@@ -1,7 +1,7 @@
 
 public static void main(String[] args) {
-    int jour = 24;
-    int mois = 9;
+    int jour = 31;
+    int mois = 12;
     int annee = 2024;
     int resultat = 0 ;
 
