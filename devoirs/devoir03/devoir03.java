@@ -61,6 +61,6 @@ public static void main(String[] args) {
     } // peut effectuer des changements après le switch (passer de mois à année)
     if(annee % 4 == 0 && mois >2) {
         resultat++; 
-    } System.out.println("le " +jour+"."+mois+"." +annee+ " est " + resultat +" de l'année");
+    } System.out.println("le " +jour+"."+mois+"." +annee+ " est le jour " + resultat +" de l'année");
     // met des espaces dans les "" pour pas que tout soit collé
 }
