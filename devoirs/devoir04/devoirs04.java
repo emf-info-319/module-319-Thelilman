@@ -1,6 +1,6 @@
 public class devoirs04 {
     public static void main(String[] args) {
-        int jour = 24;
+        int jour = 27;
         int mois = 9; // jms de 0
         int annee = 2024;
 

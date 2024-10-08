@@ -7,11 +7,14 @@ final static int MAX = 6; // Valeur de la Valeur aléatoire (maximum)
     public static void main(String[] args) {
         int[] tab;
         tab = new int[10];
-        int somme = tab.length;
+        int Somme = 0 ;
+        int nombre ;
+
         for (int i = 0; i < tab.length; i++) {          // la constante 
-        int nombre = (int) (Math.random() * (MAX - MIN + 1)) + MIN;
+        int nombre = (int) (Math.random() * (MAX - MIN + 1)) + MIN; // met ++ si tu veux augmenter la valeur et -- pour la réduire
             System.out.println(nombre);                     // Affichage des nombres et pas du tableau 
-                   tab[i]= nombre ;                         // peux remplacer nombre part i afin de mettre les variables directement         
+                   tab[i]= nombre ;  
+                               // peux remplacer nombre part i afin de mettre les variables directement         
         }
         
         
@@ -22,7 +25,7 @@ final static int MAX = 6; // Valeur de la Valeur aléatoire (maximum)
         
         
         // Calculer la moyenne
-        double moyenne = somme / tab.length;
+        double moyenne =  / tab.length;
 
         // Afficher la moyenne
         System.out.println("La moyenne est : " + moyenne);
