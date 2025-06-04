@@ -1,13 +1,13 @@
 package revisions.remed;
 import java.util.Scanner;
 public class E2 {
-  public final static INT TAILLE_PLATEAU = 20;
-  public final static String CASE_VIDE = " ";
-  public final static String CASE_REJOUER = "R";
-  public final static String CASE_RECULER = "B";
-  public final static String CASE_AVANCER = "A";
-  public final static String CASE_DEPART = "D";
-  public final static String CASE_FIN = "F";
+  public final static int TAILLE_PLATEAU = 20;
+  public final static char CASE_VIDE = ' ';
+  public final static char CASE_REJOUER = 'R';
+  public final static char CASE_RECULER = 'B';
+  public final static char CASE_AVANCER = 'A';
+  public final static char CASE_DEPART = 'D';
+  public final static char CASE_FIN = 'F';
 
   public static void main(String[] args) {
     System.out.println("Hello, World!");
@@ -23,15 +23,15 @@ public class E2 {
       scanner.nextLine();
       int de = lancerDe();
       nombreDeLance++;
-      System.out.println("Vous avez obtenue" + de);
+      System.out.println("Vous avez obtenu " + de);
       positionJoueur = deplacerjoueur(positionJoueur, plateau, de);
       positionJoueur = appliquerEffetCase(plateau, positionJoueur);
       if (positionJoueur == TAILLE_PLATEAU - 1) {
         jeuTermine = true;
         System.out
             .println("Félicitations vous avez atteint la case final et gagné le jeu en " + nombreDeLance + " coups !");
+            jeuTermine = true;
       }
-      jeuTermine = true;
     }
   }
 
@@ -46,8 +46,8 @@ public class E2 {
 
   }
 
-  public static String choisiSpécial() {
-    String[] special = { CASE_REJOUER, CASE_RECULER, CASE_AVANCER, CASE_VIDE };
+  public static char choisiSpécial() {
+    char[] special = { CASE_REJOUER, CASE_RECULER, CASE_AVANCER, CASE_VIDE };
     int index = (int) (Math.random() * special.length);
     return special[index];
   }
